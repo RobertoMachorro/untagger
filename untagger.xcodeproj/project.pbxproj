@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E95609F729C3201700E1E52C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95609F629C3201700E1E52C /* main.swift */; };
+		E9560A0029C3225E00E1E52C /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = E95609FF29C3225E00E1E52C /* SwiftSoup */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9560A0029C3225E00E1E52C /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +80,9 @@
 			dependencies = (
 			);
 			name = untagger;
+			packageProductDependencies = (
+				E95609FF29C3225E00E1E52C /* SwiftSoup */,
+			);
 			productName = untagger;
 			productReference = E95609F329C3201700E1E52C /* untagger */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +111,9 @@
 				Base,
 			);
 			mainGroup = E95609EA29C3201700E1E52C;
+			packageReferences = (
+				E95609FE29C3225E00E1E52C /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = E95609F429C3201700E1E52C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -280,6 +288,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E95609FE29C3225E00E1E52C /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E95609FF29C3225E00E1E52C /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E95609FE29C3225E00E1E52C /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E95609EB29C3201700E1E52C /* Project object */;
 }
